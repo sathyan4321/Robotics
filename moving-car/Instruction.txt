@@ -1,0 +1,25 @@
+Components Needed:
+    1. Raspberry Pi Pico - 1,
+        This is a microcontroller for the car.
+    2. BO motors (recommended) or DC motors - 4 or 2,
+        For movement, you'll need two or four motors (depending on the type of drive system)
+    3. Motor Driver - (L298N or L293D)
+        To control the motors
+    4. Power Source: A battery pack for the motors
+        (e.g., 6V or 9V depending on motor specs).
+    5. Chassis with wheels: For the physical car body.
+    6. Jumper wires: To connect everything.
+    7. Breadboard: Optional, but useful for prototyping.
+    8. Ultrasonic sensor (optional): For obstacle detection if you want more functionality (self-driving or autonomous stopping).
+
+
+Circuit Connection:
+    1. Connect the DC motors to the motor driver (e.g., L298N or L293D).
+    2. Connect the motor driver's inputs (IN1, IN2, IN3, IN4 for two motors) to the GPIO pins of the Raspberry Pi Pico.
+    3. Connect the motor driver's power and ground pins to the Pico's power (3.3V or 5V) and ground.
+    4. Power the motors using a separate battery (e.g., a 6V battery pack connected to the motor driver).
+    5. If using an ultrasonic sensor, connect its trigger and echo pins to separate GPIO pins.
+        VCC → Connect to 3.3V of the Raspberry Pi Pico.
+        GND → Connect to Ground (GND) of the Raspberry Pi Pico.
+        TRIG → Connect to GPIO pin 4 of the Pico.
+        ECHO → Connect to GPIO pin 5 of the Pico.
